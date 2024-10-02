@@ -5,7 +5,7 @@
   justify-content: flex-start;
   align-items: center;
   min-height: 100vh; /* Full viewport height */
-  padding: 100px; 
+  padding: 100px;
   background-image: url("./Join\ Waitlist.png");
 }
 
@@ -67,7 +67,6 @@ select {
   background-position: right 10px center; /* Adjust arrow position */
   padding-right: 30px; /* Space for arrow */
   color: white;
-
 }
 
 .join-button {
@@ -85,9 +84,8 @@ select {
 }
 
 .join-button:hover {
-  background-color: #f7f7f7; 
+  background-color: #f7f7f7;
 }
-
 
 @media (max-width: 768px) {
   .waitlist-form-container {
@@ -104,16 +102,15 @@ select {
 
   .join-button {
     width: 100%; /* Full width button on small screens */
+    background: white !important;
   }
 
   .waitlist-form-container {
-
     background-image: url("./Mask\ group.png");
     padding-top: 0;
     height: 1200px;
-
   }
   .form-content {
-  margin-top: -500px;
+    margin-top: -500px;
   }
 }

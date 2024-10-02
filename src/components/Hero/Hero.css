@@ -160,7 +160,7 @@
 
 @media (max-width: 768px) {
   .container {
-    padding-top: 100px;
+    padding-top: 50px !important   ;
     overflow-x: hidden !important;
   }
 
@@ -228,20 +228,17 @@
   .tab1-rb,
   .tab2-lb {
     width: 100px !important;
-    
+
     /* border: solid red; */
     /* display: none !important; */
   }
 
-  
-  
-  .tab2-lb ,
-  .card-lt{
+  .tab2-lb,
+  .card-lt {
     display: none !important;
-
   }
 
-  .new-event-lt{
+  .new-event-lt {
     position: absolute !important;
     z-index: 1 !important;
     margin-top: -300px !important;
@@ -250,17 +247,14 @@
   .todo-rt {
     margin-top: -250px !important;
     margin-right: -280px !important;
-    
   }
 
   .tab-rb {
     margin-top: 330px !important;
-    
   }
 
   .tab1-rb {
     margin-right: -80px !important;
-    
   }
 
   .blur {
@@ -274,6 +268,9 @@
 
   .event-rt {
     margin-right: 140px !important;
+  }
+  .event-lt {
+    display: none !important;
   }
   .slide-left,
   .slide-right {

@@ -160,12 +160,12 @@
 
 @media (max-width: 768px) {
   .container {
-    padding-top: 50px !important   ;
+    padding-top: 0px !important   ;
     overflow-x: hidden !important;
   }
 
   .motto {
-    margin-top: -100px;
+    margin-top: -150px;
 
     font-size: 45px;
   }

@@ -87,6 +87,10 @@
 
 /* Media query for small and extra-small devices */
 @media (max-width: 767px) {
+  .fluid-ai-container{
+    margin-top: 200px;
+
+  }
   .fluid-section {
     flex-direction: column-reverse; /* Text appears below image */
     margin-bottom: 50px;

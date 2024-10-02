@@ -1,0 +1,73 @@
+.curiosity-benefits-container {
+  background-color: #000; /* Black background */
+  color: #fff;          /* White text */
+  padding: 80px 100px;    /* Adjust as needed */
+  font-family: 'Arial', sans-serif; /* Choose your font */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Enable wrapping on smaller screens */
+}
+
+.content-area {
+  max-width: 40%;
+}
+
+.main-title {
+  font-size: 4rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.faq-section {
+  width: 45%; /* Adjust width as needed */
+}
+
+.faq-item {
+  border-bottom: 1px solid #333;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.plus-icon {
+  font-size: 2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .curiosity-benefits-container {
+    padding: 40px 20px; /* Reduce padding */
+    flex-direction: column; /* Stack the content */
+  }
+
+  .content-area, .faq-section {
+    max-width: 100%; /* Full width on small screens */
+    width: 100%;
+    text-align: center; /* Center the text */
+  }
+
+  .main-title {
+    font-size: 2.5rem; /* Smaller font size for smaller screens */
+  }
+
+  .intro-text {
+    font-size: 1rem;
+  }
+
+  .faq-item {
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+
+  .plus-icon {
+    font-size: 1.5rem;
+  }
+}

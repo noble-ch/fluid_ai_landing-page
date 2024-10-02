@@ -1,0 +1,119 @@
+.waitlist-form-container {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  padding: 100px; 
+  background-image: url("./Join\ Waitlist.png");
+}
+
+.form-content {
+  /* background-color: rgba(0, 0, 0, 0.6);  */
+  padding: 50px;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.form-title {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.waitlist-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.397);
+  color: white;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.397);
+}
+
+.country-select select {
+  -webkit-appearance: none; /* For Chrome, Safari, Edge */
+  -moz-appearance: none; /* For Firefox */
+  appearance: none; /* Default */
+  background: transparent; /* Remove default arrow */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path stroke="%23343a40" stroke-width="0.2" fill="none" d="M2 0L0 2h4z" transform="rotate(180 2 2)"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 30px;
+  background-position: right 10px center; /* Adjust arrow position */
+  padding-right: 30px; /* Space for arrow */
+  color: white;
+
+}
+
+.join-button {
+  font-family: sans-serif;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  color: black !important;
+  width: 167px;
+  height: 52px;
+  font-weight: 700;
+  box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.473);
+  margin-top: 20px;
+}
+
+.join-button:hover {
+  background-color: #f7f7f7; 
+}
+
+
+@media (max-width: 768px) {
+  .waitlist-form-container {
+    padding: 40px 20px; /* Reduce padding on smaller screens */
+  }
+
+  .form-content {
+    padding: 30px; /* Reduce padding for the form */
+  }
+
+  .form-title {
+    font-size: 2.5rem; /* Smaller font size */
+  }
+
+  .join-button {
+    width: 100%; /* Full width button on small screens */
+  }
+
+  .waitlist-form-container {
+
+    background-image: url("./Mask\ group.png");
+    padding-top: 0;
+    height: 1200px;
+
+  }
+  .form-content {
+  margin-top: -500px;
+  }
+}

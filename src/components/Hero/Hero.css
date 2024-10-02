@@ -1,0 +1,286 @@
+.container {
+  padding-top: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo-container {
+  margin: 0 auto;
+  position: sticky;
+  top: 290px;
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  transition: width 1s ease;
+}
+
+.logo-container.sticky {
+  position: sticky;
+  top: 220px;
+}
+
+.logo {
+  width: 100%;
+}
+
+.motto {
+  margin-top: 100px;
+  font-size: 65px;
+  font-family: sans-serif;
+  font-weight: 400;
+  opacity: 0;
+  transform: translateY(200px);
+  transition: opacity 1s ease, transform 0.5s ease;
+  position: absolute;
+}
+
+.join-btn {
+  font-family: sans-serif;
+  font-size: 16px;
+  opacity: 0;
+  transform: translateY(200px);
+  transition: opacity 1s ease, transform 0.5s ease;
+  position: absolute;
+  margin-top: 350px;
+  color: black !important;
+  width: 167px;
+  height: 52px;
+  box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.473);
+  font-weight: 700;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Sliding text animations */
+.slide-right {
+  position: absolute;
+  transform: translateX(2000px);
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+  margin-top: 200px;
+  right: 10rem;
+}
+
+.show-right {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.todo-rt {
+  margin-top: -400px;
+  right: 18rem;
+  width: 232px;
+}
+.event-rt {
+  margin-top: -50px;
+  right: 6rem;
+  width: 232px;
+}
+.reservation-rb {
+  margin-top: 600px;
+  right: 22rem;
+  width: 228px;
+}
+.tab-rb {
+  margin-top: 180px;
+  width: 138px;
+  right: 3rem;
+}
+
+.tab1-rb {
+  background: rgba(0, 0, 0, 0.151);
+  margin-top: 300px;
+  width: 108px;
+  height: 35px;
+  right: 7rem;
+  border-radius: 20px;
+  font-weight: 600;
+  padding-top: 5px;
+  color: rgba(245, 245, 245, 0.836);
+}
+
+.slide-left {
+  position: absolute;
+  transform: translateX(-3000px);
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+  margin-top: 250px;
+  left: 8rem;
+}
+
+.show-left {
+  transform: translateX(0);
+  opacity: 1;
+}
+.card-lt {
+  margin-top: -250px !important;
+  left: 18rem;
+  width: 214px;
+}
+.todo-lt {
+  margin-top: -100px !important;
+  left: -5rem;
+  width: 232px;
+}
+
+.event-lt {
+  left: 2rem;
+  width: 232px;
+}
+.new-event-lt {
+  left: 17rem;
+  margin-top: 700px;
+  width: 282px;
+}
+
+.tab2-lb {
+  width: 142px;
+  margin-top: 400px;
+  left: 20rem;
+}
+
+.blur {
+  margin-top: 500px;
+  position: absolute;
+  width: 100%;
+  height: 200vh;
+  background-image: url("./Assets/blur.png");
+  background-size: cover;
+  z-index: -1;
+}
+
+.content {
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-top: 100px;
+    overflow-x: hidden !important;
+  }
+
+  .motto {
+    margin-top: -100px;
+
+    font-size: 45px;
+  }
+
+  .logo-container {
+    position: relative;
+    top: 190px;
+    transform: translateX(-5%);
+    transition: width 1s ease;
+    overflow-x: hidden !important;
+    text-align: center;
+  }
+
+  .logo {
+    width: 80%;
+  }
+
+  .todo-rt,
+  .todo-lt,
+  .card-lt,
+  .event-rt,
+  .event-lt,
+  .new-event-lt,
+  .reservation-rb,
+  .tab-rb,
+  .tab1-rb,
+  .tab2-lb {
+    width: 100px !important;
+    /* border: solid red; */
+    /* display: none !important; */
+  }
+
+  .join-btn {
+    width: 120px;
+    height: 40px;
+    margin-top: 100px;
+  }
+  .content {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    overflow-x: hidden !important;
+  }
+
+  .motto {
+    font-size: 30px;
+  }
+
+  .todo-rt,
+  .todo-lt,
+  .card-lt,
+  .event-rt,
+  .event-lt,
+  .new-event-lt,
+  .reservation-rb,
+  .tab-rb,
+  .tab1-rb,
+  .tab2-lb {
+    width: 100px !important;
+    
+    /* border: solid red; */
+    /* display: none !important; */
+  }
+
+  
+  
+  .tab2-lb ,
+  .card-lt{
+    display: none !important;
+
+  }
+
+  .new-event-lt{
+    position: absolute !important;
+    z-index: 1 !important;
+    margin-top: -300px !important;
+    margin-left: -300px !important;
+  }
+  .todo-rt {
+    margin-top: -250px !important;
+    margin-right: -280px !important;
+    
+  }
+
+  .tab-rb {
+    margin-top: 330px !important;
+    
+  }
+
+  .tab1-rb {
+    margin-right: -80px !important;
+    
+  }
+
+  .blur {
+    height: 100vh; /* Adjust blur height for small screens */
+  }
+
+  .reservation-rb {
+    margin-right: -300px;
+    margin-top: 500px !important;
+  }
+
+  .event-rt {
+    margin-right: 140px !important;
+  }
+  .slide-left,
+  .slide-right {
+    position: absolute;
+    transform: translateX(0);
+    /* opacity: 0; */
+    transition: transform 1s ease, opacity 1s ease;
+    margin-top: 250px;
+  }
+}

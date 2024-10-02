@@ -45,6 +45,7 @@ const FluidAI = () => {
           <p className="description">
             In a world where daily tasks, communication, and goals often become overwhelming, Fluid AI offers an innovative solution. Combining advanced AI technology with a user-friendly interface, it brings together to-do lists, chats, saved items, and bucket lists into one seamless platform.         
              </p>
+             <p className='description'> 1/4</p>
         </div>
         <div className="image-container">
           <img src={iphone} alt="Fluid AI Feature 1" />
@@ -59,6 +60,8 @@ const FluidAI = () => {
           <p className="description">
             In a world where daily tasks, communication, and goals often become overwhelming, Fluid AI offers an innovative solution. Combining advanced AI technology with a user-friendly interface, it brings together to-do lists, chats, saved items, and bucket lists into one seamless platform.         
              </p>
+             <p className='description'> 2/4</p>
+
         </div>
         <div className="image-container">
           <img src={iphone1} alt="Fluid AI Feature 2" />
@@ -72,6 +75,8 @@ const FluidAI = () => {
           <p className="description">
             In a world where daily tasks, communication, and goals often become overwhelming, Fluid AI offers an innovative solution. Combining advanced AI technology with a user-friendly interface, it brings together to-do lists, chats, saved items, and bucket lists into one seamless platform.         
              </p>
+             <p className='description'> 3/4</p>
+
         </div>
         <div className="image-container">
           <img src={iphone2} alt="Fluid AI Feature 3" />
@@ -84,6 +89,8 @@ const FluidAI = () => {
           <p className="description">
             In a world where daily tasks, communication, and goals often become overwhelming, Fluid AI offers an innovative solution. Combining advanced AI technology with a user-friendly interface, it brings together to-do lists, chats, saved items, and bucket lists into one seamless platform.         
              </p>
+             <p className='description'> 4/4</p>
+
         </div>
         <div className="image-container">
           <img src={iphone3} alt="Fluid AI Feature 4" />

@@ -13,20 +13,18 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading time for assets or check when the page is fully loaded
-    window.addEventListener("load", () => {
-      setIsLoading(false); // When everything is loaded, hide the preloader
-    });
+    // Set the spinner to hide after 5 seconds
+    const timer = setTimeout(() => {
+      setIsLoading(false); 
+    }, 3000);
 
-    return () => {
-      window.removeEventListener("load", () => setIsLoading(false));
-    };
+    return () => clearTimeout(timer);
   }, []);
 
   return (
     <div>
       {isLoading ? (
-        <Preloader /> 
+        <Preloader /> // Show preloader when the page is loading
       ) : (
         <>
           <Header />

@@ -55,3 +55,50 @@
     height: auto;
   }
 }
+
+
+.custom-toggler {
+  width: 30px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.custom-toggler .line1,
+.custom-toggler .line2,
+.custom-toggler .line3 {
+  background-color: white;
+  height: 3px;
+  width: 100%;
+  transition: 0.4s;
+}
+
+.custom-toggler .line2{
+  width: 80%;
+}
+.custom-toggler.active .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.custom-toggler.active .line2 {
+  opacity: 0;
+}
+
+.custom-toggler.active .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.nav-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-center .nav-link {
+  margin: 10px 0;
+  color: white;
+  display: none;
+
+}

@@ -66,14 +66,15 @@ const FluidAI = () => {
       </section>
 
       <section className="fluid-section" ref={(el) => sectionsRef.current.push(el)}>
-        <div className="image-container">
-          <img src={iphone2} alt="Fluid AI Feature 3" />
-        </div>
+      
         <div className="text-left absolute">
         <h1 className="title"> Fluid AI: Simplify, Organize,  <br />and Achieve More</h1>
           <p className="description">
             In a world where daily tasks, communication, and goals often become overwhelming, Fluid AI offers an innovative solution. Combining advanced AI technology with a user-friendly interface, it brings together to-do lists, chats, saved items, and bucket lists into one seamless platform.         
              </p>
+        </div>
+        <div className="image-container">
+          <img src={iphone2} alt="Fluid AI Feature 3" />
         </div>
       </section>
 

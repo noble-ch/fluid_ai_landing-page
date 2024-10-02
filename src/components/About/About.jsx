@@ -37,6 +37,8 @@ const FluidAI = () => {
 
   return (
     <div className="fluid-ai-container">
+                   <p className='description'> Our Feature</p>
+
         <h1 className="title-main color text-center">Fluid AI was born out of a  <br/> desire to simplify and  <br/> streamline modern life</h1>
 
       <section className="fluid-section " ref={(el) => sectionsRef.current.push(el)}>

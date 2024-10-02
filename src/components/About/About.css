@@ -88,32 +88,32 @@
 /* Media query for small and extra-small devices */
 @media (max-width: 767px) {
   .fluid-section {
-    flex-direction: column;
+    flex-direction: column-reverse; /* Text appears below image */
     margin-bottom: 50px;
     text-align: center;
   }
 
   .text-left,
-  .text-right,
-  .show-left {
-    position: static;
+  .text-right {
+    position: static; /* Remove absolute positioning */
     margin: 0;
     width: 100%;
-    text-align: center;
+    text-align: center; /* Center text on small screens */
   }
 
   .image-container {
     max-width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Add some space between the image and text */
   }
 
   .title {
     font-size: 2rem;
   }
-.title-main{
-  font-size: 2rem;
 
-}
+  .title-main {
+    font-size: 2rem;
+  }
+
   .description {
     font-size: 1rem;
   }
